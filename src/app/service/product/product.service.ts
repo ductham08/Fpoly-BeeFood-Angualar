@@ -8,8 +8,8 @@ import { Iproduct } from 'src/app/model/product';
 })
 export class ProductService {
 
-  urlApi_product = "http://localhost:3000/products";
-  urlApi_new_deshes = "http://localhost:3000/new_dishes";
+  urlApi_product = "https://63387aa9937ea77bfdc0bbea.mockapi.io/products";
+  urlApi_new_deshes = "https://63387aa9937ea77bfdc0bbea.mockapi.io/products";
 
   constructor(private httpclient:HttpClient) { 
   }
