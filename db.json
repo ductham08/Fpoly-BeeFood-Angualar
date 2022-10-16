@@ -54,5 +54,23 @@
             "createAt": "30/09/2022",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium dolor sed turpis interdum pulvinar. In tincidunt vulputate dolor nec euismod. In luctus finibus euismod. Aliquam et turpis ut ex dapibus semper. Nunc malesuada nec lacus nec tristique. Phasellus auctor justo a orci tristique, ac porttitor eros auctor. Nam at euismod orci, ut lobortis elit."
         }
-    ]
+    ],
+    "products_cate": [{
+            "id": 1,
+            "name": "Product phone",
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "name": "Product laptop",
+            "categoryId": 2
+        }
+    ],
+    "categories": [{
+        "id": 1,
+        "name": "phone"
+    }, {
+        "id": 2,
+        "name": "laptop"
+    }]
 }

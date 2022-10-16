@@ -12,6 +12,8 @@ import { DetailPageComponent } from './page/detail-page/detail-page.component';
 import { ProductPageComponent } from './page/product-page/product-page.component';
 import { ContactPageComponent } from './page/contact-page/contact-page.component';
 import { SwiperModule } from 'swiper/angular';
+import { LoginPageComponent } from './page/login-page/login-page.component';
+import { HomePageAdminComponent } from './page/admin/home-page-admin/home-page-admin.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { SwiperModule } from 'swiper/angular';
     HomePageComponent,
     DetailPageComponent,
     ProductPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    LoginPageComponent,
+    HomePageAdminComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
