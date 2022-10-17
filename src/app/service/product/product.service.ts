@@ -8,8 +8,8 @@ import { Iproduct } from 'src/app/model/product';
 })
 export class ProductService {
 
-  urlApi_product = "http://localhost:3000/products";
-  urlApi_new_dishes = "http://localhost:3000/new_dishes";
+  urlApi_product = "https://json-server-mu.vercel.app/apiproducts";
+  urlApi_new_dishes = "https://json-server-mu.vercel.app/api/new_dishes";
 
   constructor(private httpclient:HttpClient) { 
   }
