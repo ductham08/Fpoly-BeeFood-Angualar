@@ -13,7 +13,15 @@ import { ProductPageComponent } from './page/product-page/product-page.component
 import { ContactPageComponent } from './page/contact-page/contact-page.component';
 import { SwiperModule } from 'swiper/angular';
 import { LoginPageComponent } from './page/login-page/login-page.component';
-import { HomePageAdminComponent } from './page/admin/home-page-admin/home-page-admin.component';
+import { HomeAdminPageComponent } from './page/admin/home-admin-page/home-admin-page.component';
+import { HomeUserPageComponent } from './page/home-user-page/home-user-page.component';
+import { ProductsAdminPageComponent } from './page/admin/products-admin-page/products-admin-page.component';
+import { NavbarComponent } from './components/admin/navbar/navbar.component';
+import { CategoriesAdminPageComponent } from './page/admin/categories-admin-page/categories-admin-page.component';
+import { UserAdminPageComponent } from './page/admin/user-admin-page/user-admin-page.component';
+import { DashbroadAdminPageComponent } from './page/admin/dashbroad-admin-page/dashbroad-admin-page.component';
+import { ProductAddPageComponent } from './page/admin/product-add-page/product-add-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,13 +34,22 @@ import { HomePageAdminComponent } from './page/admin/home-page-admin/home-page-a
     ProductPageComponent,
     ContactPageComponent,
     LoginPageComponent,
-    HomePageAdminComponent,
+    HomeAdminPageComponent,
+    HomeUserPageComponent,
+    ProductsAdminPageComponent,
+    NavbarComponent,
+    CategoriesAdminPageComponent,
+    UserAdminPageComponent,
+    DashbroadAdminPageComponent,
+    ProductAddPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     SwiperModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

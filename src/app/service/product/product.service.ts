@@ -24,11 +24,21 @@ export class ProductService {
 
   get_New_product(limit:number):Observable<Iproduct[]>{
     return this.httpclient.get<Iproduct[]>(`${this.urlApi_new_dishes}?_sort=createAt&_order=desc&_limit=${limit}`)
-  }
+  } 
 
   get_Product(id: Number):Observable<Iproduct>{
     return this.httpclient.get<Iproduct>(`${this.urlApi_product}/${id}`)
   }
+
+  add_Product(product:any):Observable<Iproduct>{
+    return this.httpclient.post<Iproduct>(this.urlApi_product,product)
+  }
+
+  remove_Product(id:Number):Observable<Iproduct>{
+    return this.httpclient.delete<Iproduct>(`${this.urlApi_product}/${id}`)
+  }
+
+
 
   
 
