@@ -62,10 +62,10 @@
 
 .login_page .form_login_page .desc_form_login button {
     margin: 20px 0px;
+    width: 100%;
     border: 0.5px solid #984d49;
     background-color: transparent;
     border-radius: 20px;
-    width: 100%;
     padding: 3px 0px;
 }
 

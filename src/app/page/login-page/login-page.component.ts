@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { UserService } from 'src/app/service/user/user.service';
 
 @Component({
   selector: 'app-login-page',
@@ -7,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
+  signinForm = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl(''),
+  })
 
-  constructor() { }
+  constructor(
+    private userService:UserService
+  ) { }
 
   ngOnInit(): void {
   }
+
+  onHandleSignin() {
+    this.userService.signin(this.signinForm.value).subscribe(data => {
+     console.log('thanh cong')
+    })
+   }
 
 }

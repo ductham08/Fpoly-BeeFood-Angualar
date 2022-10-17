@@ -20,6 +20,7 @@ export class ProductAddPageComponent implements OnInit {
     price: new FormControl(''),
     category: new FormControl(''),
     image: new FormControl(''),
+    desc: new FormControl(''),
   })
 
   
@@ -49,14 +50,10 @@ export class ProductAddPageComponent implements OnInit {
   }
 
   onHandleAdd() {
-    // console.log(this.productForm.value.image);
-    // this.productService.add_Product(this.productForm.value).subscribe(data => {
-    //   console.log("Thanh cong")
-    // })
-
-    // this.upload_file()
-
-    console.log(this.img)
+    console.log(this.productForm.value.image);
+    this.productService.add_Product(this.productForm.value).subscribe(data => {
+      console.log("Thanh cong")
+    })
   }
 
   

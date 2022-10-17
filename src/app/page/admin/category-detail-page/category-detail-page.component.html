@@ -12,14 +12,9 @@
                     <th class="col-2">Price product</th>
                     <th class="col-4">Description</th>
                     <th class="col-1">Order</th>
-                    <th class="col-1">
-                        <a routerLink="./add">
-                            <i class="fas fa-plus-circle"></i>
-                        </a>
-                    </th>
                 </tr>
             </thead>
-            <tbody *ngFor="let item of products">
+            <tbody *ngFor="let item of categories.products">
                 <tr>
                     <td><img src="{{item.image}}" width="70%" alt=""></td>
                     <td>
@@ -30,16 +25,6 @@
                     <td>{{item.price}}$</td>
                     <td class="desc">{{item.desc}}</td>
                     <td>{{item.order}}</td>
-                    <td class="list_btn">
-                        <button (click)="removeItem(item.id)">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                        <button>
-                            <a routerLink="./edit/{{item.id}}">
-                                <i class="fas fa-edit"></i>
-                            </a>
-                        </button>
-                    </td>
                 </tr>
             </tbody>
         </table>

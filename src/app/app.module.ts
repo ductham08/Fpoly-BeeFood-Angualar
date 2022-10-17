@@ -22,6 +22,11 @@ import { UserAdminPageComponent } from './page/admin/user-admin-page/user-admin-
 import { DashbroadAdminPageComponent } from './page/admin/dashbroad-admin-page/dashbroad-admin-page.component';
 import { ProductAddPageComponent } from './page/admin/product-add-page/product-add-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductEditPageComponent } from './page/admin/product-edit-page/product-edit-page.component';
+import { CategoryDetailPageComponent } from './page/admin/category-detail-page/category-detail-page.component';
+import { CategoryAddPageComponent } from './page/admin/category-add-page/category-add-page.component';
+import { CategoryEditPageComponent } from './page/admin/category-edit-page/category-edit-page.component';
+import { SignupPageComponent } from './page/signup-page/signup-page.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +47,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UserAdminPageComponent,
     DashbroadAdminPageComponent,
     ProductAddPageComponent,
+    ProductEditPageComponent,
+    CategoryDetailPageComponent,
+    CategoryAddPageComponent,
+    CategoryEditPageComponent,
+    SignupPageComponent,
   ],
   imports: [
     BrowserModule,

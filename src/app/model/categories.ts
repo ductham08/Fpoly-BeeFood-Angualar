@@ -1,4 +1,5 @@
 export interface Icategories {
     id: Number,
-    name: String
+    name: String,
+    products: any
 }
