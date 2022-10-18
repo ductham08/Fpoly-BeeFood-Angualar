@@ -14,7 +14,6 @@ export class DashbroadAdminPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.productService.get_New_product(3).subscribe(data => {
-      console.log(data)
       this.New_products = data
     })
 

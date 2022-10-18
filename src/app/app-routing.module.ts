@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth.guard';
 import { CategoriesAdminPageComponent } from './page/admin/categories-admin-page/categories-admin-page.component';
 import { CategoryAddPageComponent } from './page/admin/category-add-page/category-add-page.component';
 import { CategoryDetailPageComponent } from './page/admin/category-detail-page/category-detail-page.component';
@@ -27,7 +28,7 @@ const routes: Routes = [
     {path:"signin", component: LoginPageComponent},
     {path:"signup", component: SignupPageComponent},
   ]},
-  {path:"admin", component: HomeAdminPageComponent, children: [
+  {path:"admin", component: HomeAdminPageComponent,canActivate: [AuthGuard], children: [
     {path:"", component: DashbroadAdminPageComponent},
     {path:"products", component: ProductsAdminPageComponent},
     {path:"products/add", component: ProductAddPageComponent},

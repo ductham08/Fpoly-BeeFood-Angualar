@@ -25,7 +25,7 @@ export class LoginPageComponent implements OnInit {
 
   onHandleSignin() {
     this.userService.signin(this.signinForm.value).subscribe(data => {
-    localStorage.setItem('foo', JSON.stringify({user: data}));
+    localStorage.setItem('user', JSON.stringify(data));
     return this.error_mess = "Successful login!"
    },error => {
     return this.error_mess = error['error'];
