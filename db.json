@@ -28,6 +28,35 @@
             "order": 95,
             "createAt": "30/09/2022",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium dolor sed turpis interdum pulvinar. In tincidunt vulputate dolor nec euismod. In luctus finibus euismod. Aliquam et turpis ut ex dapibus semper. Nunc malesuada nec lacus nec tristique. Phasellus auctor justo a orci tristique, ac porttitor eros auctor. Nam at euismod orci, ut lobortis elit."
+        },
+        {
+            "id": 4,
+            "name": "French Dip New",
+            "image": "https://res.cloudinary.com/ductham087/image/upload/v1664609758/Bee%20Food/img_detail_product_01_iqanmo.png",
+            "price": 30,
+            "categoryId": 1,
+            "order": 95,
+            "createAt": "20/09/2022",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium dolor sed turpis interdum pulvinar. In tincidunt vulputate dolor nec euismod. In luctus finibus euismod. Aliquam et turpis ut ex dapibus semper. Nunc malesuada nec lacus nec tristique. Phasellus auctor justo a orci tristique, ac porttitor eros auctor. Nam at euismod orci, ut lobortis elit."
+        },
+        {
+            "id": 5,
+            "name": "Chili Lime New",
+            "image": "https://res.cloudinary.com/ductham087/image/upload/v1664609758/Bee%20Food/img_detail_product_hloper.png",
+            "price": 22,
+            "categoryId": 2,
+            "order": 100,
+            "createAt": "29/09/2022",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium dolor sed turpis interdum pulvinar. In tincidunt vulputate dolor nec euismod. In luctus finibus euismod. Aliquam et turpis ut ex dapibus semper. Nunc malesuada nec lacus nec tristique. Phasellus auctor justo a orci tristique, ac porttitor eros auctor. Nam at euismod orci, ut lobortis elit."
+        }, {
+            "id": 6,
+            "name": "Honey Mustand New",
+            "image": "https://res.cloudinary.com/ductham087/image/upload/v1664609758/Bee%20Food/img_detail_product_02_eclwvh.png",
+            "price": 23,
+            "categoryId": 2,
+            "order": 150,
+            "createAt": "23/09/2022",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium dolor sed turpis interdum pulvinar. In tincidunt vulputate dolor nec euismod. In luctus finibus euismod. Aliquam et turpis ut ex dapibus semper. Nunc malesuada nec lacus nec tristique. Phasellus auctor justo a orci tristique, ac porttitor eros auctor. Nam at euismod orci, ut lobortis elit."
         }
     ],
     "categories": [{
