@@ -8,8 +8,8 @@ import { Iproduct } from 'src/app/model/product';
 })
 export class ProductService {
 
-  urlApi_product = "https://json-server-mu.vercel.app/api/products";
-  urlApi_new_dishes = "https://json-server-mu.vercel.app/api/new_dishes";
+  urlApi_product = " http://localhost:3000/products";
+  // urlApi_product = "https://json-server-mu.vercel.app/api/products";
 
   constructor(private httpclient:HttpClient) { 
   }
@@ -23,7 +23,7 @@ export class ProductService {
   }
 
   get_New_product(limit:number):Observable<Iproduct[]>{
-    return this.httpclient.get<Iproduct[]>(`${this.urlApi_new_dishes}?_sort=createAt&_order=desc&_limit=${limit}`)
+    return this.httpclient.get<Iproduct[]>(`${this.urlApi_product}?_sort=createAt&_order=desc&_limit=${limit}`)
   } 
 
   get_Product(id: Number):Observable<Iproduct>{

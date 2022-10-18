@@ -22,10 +22,13 @@ export class SignupPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  error_mess!:any;
+
   onHandleSignup() {
    this.userService.signup(this.signupForm.value).subscribe(data => {
+    return this.error_mess = "Successful account registration!"
    },error => {
-    return error
+    return this.error_mess = error['error'];
    }
    )
   }

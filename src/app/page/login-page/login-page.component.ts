@@ -21,10 +21,16 @@ export class LoginPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  error_mess!:any;
+
   onHandleSignin() {
     this.userService.signin(this.signinForm.value).subscribe(data => {
-     console.log('thanh cong')
-    })
+    localStorage.setItem('foo', JSON.stringify({user: data}));
+    return this.error_mess = "Successful login!"
+   },error => {
+    return this.error_mess = error['error'];
    }
+   )
+  }
 
 }

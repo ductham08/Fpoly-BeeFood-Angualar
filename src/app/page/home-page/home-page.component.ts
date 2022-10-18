@@ -24,27 +24,6 @@ export class HomePageComponent implements OnInit {
     this.productService.get_New_product(1).subscribe(data => {
       this.New_products = data
     })
-    // Slide
-  //   var swiper = new Swiper(".mySwiper", {
-  //     pagination: {
-  //         el: ".swiper-pagination",
-  //         type: "progressbar",
-  //     },
-  //     navigation: {
-  //         nextEl: ".swiper-button-next",
-  //         prevEl: ".swiper-button-prev",
-  //     },
-  // });
-//   var swiper = new Swiper(".mySwiper", {
-//     pagination: {
-//         el: ".swiper-pagination",
-//         type: "progressbar",
-//     },
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-// });
   }
 
 }

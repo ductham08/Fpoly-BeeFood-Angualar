@@ -12,14 +12,16 @@ export class UserService {
     private httpclient:HttpClient
   ) { }
 
-  urlApi_user = "https://json-server-mu.vercel.app/api/users";
-  urlApi = "https://json-server-mu.vercel.app/api";
+  urlApi_user = " http://localhost:3000/users";
+  urlApi = " http://localhost:3000";
+  // urlApi_user = "https://json-server-mu.vercel.app/api/users";
+  // urlApi = "https://json-server-mu.vercel.app/api";
 
   signup(users: any):Observable<Iuser>{
     return this.httpclient.post<Iuser>(`${this.urlApi}/signup`, users)
   }
 
-  signin(users: any):Observable<Iuser>{
-    return this.httpclient.post<Iuser>(`${this.urlApi}/signin`, users)
+  signin(users: any):Observable<any>{
+    return this.httpclient.post<any>(`${this.urlApi}/signin`, users)
   }
 }

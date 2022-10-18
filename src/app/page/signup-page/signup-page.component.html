@@ -10,8 +10,8 @@
             <p class="text">Or use your email account!</p>
         </div>
         <div class="desc_form_login">
-            <div>
-
+            <div *ngIf="error_mess">
+                <p style="color: red ;padding: 0;margin: 0;font-size: 15px;">{{error_mess}}!</p>
             </div>
             <form (ngSubmit)="onHandleSignup()" [formGroup]="signupForm">
                 <input type="text" placeholder="Name" name="name" formControlName="name">

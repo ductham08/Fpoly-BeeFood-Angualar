@@ -7,7 +7,8 @@ import { Icategories } from 'src/app/model/categories';
   providedIn: 'root'
 })
 export class CategoriesService {
-  urlApi_categories = "https://json-server-mu.vercel.app/api/categories";
+  urlApi_categories = " http://localhost:3000/categories";
+  // urlApi_categories = "https://json-server-mu.vercel.app/api/categories";
   constructor(private httpclient:HttpClient) { }
 
   get_All_Categories ():Observable<Icategories[]>{
