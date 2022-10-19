@@ -27,6 +27,7 @@
     border-radius: 5px;
     padding: 5px 10px 25px 10px;
     color: #984d49;
+    margin-right: 10px;
 }
 
 .product_add_page .main_products_add form input[type=text],

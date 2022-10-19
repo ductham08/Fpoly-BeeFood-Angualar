@@ -15,6 +15,12 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     position: relative;
     background-image: linear-gradient(to right bottom, #d5e0c0, #dfdcbc, #e8d8bb, #efd4bd, #f3d1c2, #f2d3c5, #f0d4c7, #efd6ca, #eadcce, #e6e1d5, #e4e5dd, #e6e8e5);
     background-repeat: no-repeat;

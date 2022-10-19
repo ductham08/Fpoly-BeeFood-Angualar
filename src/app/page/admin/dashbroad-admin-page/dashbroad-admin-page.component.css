@@ -24,6 +24,7 @@
 .dashboard_page .main_dashboard {
     padding: 10px 0px 0px 0px;
     margin: 0;
+    margin-right: 10px;
 }
 
 .dashboard_page .main_dashboard .chart .title_chart {
